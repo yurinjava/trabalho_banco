@@ -10,9 +10,9 @@ public class Banco {
 		int corrente = sc.nextInt();
 		System.out.print("Entre com o saldo inicial da conta corrente: ");
 		double saldoCorrente = sc.nextDouble();
-		System.out.print("Entre com o numero da conta poupança: ");
+		System.out.print("Entre com o numero da conta poupanï¿½a: ");
 		int poupanca = sc.nextInt();
-		System.out.print("Entre com o saldo inicial da conta poupança: ");
+		System.out.print("Entre com o saldo inicial da conta poupanï¿½a: ");
 		double saldoPoupanca = sc.nextDouble();
 		
 		System.out.println("------------------------------------------------------");
@@ -21,8 +21,8 @@ public class Banco {
 		String  test="y";
 	
 		
-		while(!"y".equals(test));{
-			System.out.println("Qual operaçao deseja realizar?");
+		while("y".equals(test));{
+			System.out.println("Qual operaï¿½ao deseja realizar?");
 			System.out.println("1-Creditar");
 			System.out.println("2-Debitar");
 			System.out.println("3-Transferir");
@@ -57,8 +57,8 @@ public class Banco {
 						break;
 					}
 					case 4:{
-						System.out.println("seu saldo da conta corrente é "+saldoCorrente);
-						System.out.println("seu saldo da conta poupanca é "+saldoPoupanca);
+						System.out.println("seu saldo da conta corrente ï¿½ "+saldoCorrente);
+						System.out.println("seu saldo da conta poupanca ï¿½ "+saldoPoupanca);
 						break;
 					}
 					case 5:{
