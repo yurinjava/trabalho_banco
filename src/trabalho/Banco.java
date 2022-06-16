@@ -83,18 +83,46 @@ public class Banco {
 							System.out.println("deseja realizar alguma outra operecao? y/n ");
 							nula=sc.nextLine();
 							 test = sc.nextLine();
+						}else {
+							System.out.println("Erro! Opcao invalida.");
 						}
 						
 						break;
 					}
 					case 3:{
-						System.out.println("tranferir");
+						System.out.println("De que conta do deseja transferir?");
+						System.out.println("1-Corrente");
+						System.out.println("2-Poupanca");
+						int resp3 = sc.nextInt();
+						if(resp3==1) {
+							System.out.println("Que valor deve ser tranferido da conta "+corrente+"?");
+							opCorrente=sc.nextDouble();
+							saldoCorrente -= opCorrente;
+							saldoPoupanca+=opCorrente;
+							System.out.println(opCorrente+" reais transferidos da sua conta conta "+corrente+" para a conta "+poupanca);
+							
+							System.out.println("deseja realizar alguma outra operecao? y/n ");
+							nula=sc.nextLine();
+							 test = sc.nextLine();
+						}else if(resp3==2) {
+							System.out.println("Que valor deve ser tranferido da conta "+poupanca+"?");
+							opPoupanca=sc.nextDouble();
+							saldoCorrente -= opPoupanca;
+							saldoPoupanca+=opPoupanca;
+							System.out.println(opPoupanca+" reais transferidos da sua conta conta "+poupanca+" para a conta "+corrente);
+							
+							System.out.println("deseja realizar alguma outra operecao? y/n ");
+							nula=sc.nextLine();
+							 test = sc.nextLine();
+						}else {
+							System.out.println("Erro! Opcao invalida.");
+						}
 						break;
 					}
 					case 4:{
 						System.out.println("------------------------------------------");
-						System.out.println("seu saldo da conta corrente � "+saldoCorrente);
-						System.out.println("seu saldo da conta poupanca � "+saldoPoupanca);
+						System.out.println("seu saldo da conta corrente numero "+corrente+" � de: "+saldoCorrente);
+						System.out.println("seu saldo da conta poupanca numero "+poupanca+" � de: "+saldoPoupanca);
 						System.out.println("------------------------------------------");
 						System.out.println();
 						System.out.println("deseja realizar alguma outra operecao? y/n ");
