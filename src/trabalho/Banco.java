@@ -107,8 +107,8 @@ public class Banco {
 						}else if(resp3==2) {
 							System.out.println("Que valor deve ser tranferido da conta "+poupanca+"?");
 							opPoupanca=sc.nextDouble();
-							saldoCorrente -= opPoupanca;
-							saldoPoupanca+=opPoupanca;
+							saldoPoupanca -= opPoupanca;
+							saldoCorrente+=opPoupanca;
 							System.out.println(opPoupanca+" reais transferidos da sua conta conta "+poupanca+" para a conta "+corrente);
 							
 							System.out.println("deseja realizar alguma outra operecao? y/n ");
@@ -136,7 +136,8 @@ public class Banco {
 					}
 				}		
 		}
-		System.out.println("Encerrando aplicacao ");
+		System.out.println("Encerrando aplicacao. ");
+		System.out.println("Obrigado pela preferencia "+nome+" :)");
 		sc.close();
 	}
 }
