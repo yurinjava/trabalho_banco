@@ -121,8 +121,10 @@ public class Banco {
 					}
 					case 4:{
 						System.out.println("------------------------------------------");
-						System.out.println("seu saldo da conta corrente numero "+corrente+" � de: "+saldoCorrente);
-						System.out.println("seu saldo da conta poupanca numero "+poupanca+" � de: "+saldoPoupanca);
+						System.out.printf("seu saldo da conta corrente numero "+corrente+" � de: %.2f",saldoCorrente);
+						System.out.println();
+						System.out.printf("seu saldo da conta poupanca numero "+poupanca+" � de: %.2f",saldoPoupanca);
+						System.out.println();
 						System.out.println("------------------------------------------");
 						System.out.println();
 						System.out.println("deseja realizar alguma outra operecao? y/n ");
